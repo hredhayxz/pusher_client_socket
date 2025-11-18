@@ -2,7 +2,7 @@ import 'dart:convert';
 
 class ChannelData {
   /// The user id of the channel data.
-  final int userId;
+  final String userId;
 
   /// The user info of the channel data.
   final dynamic userInfo;
@@ -11,7 +11,7 @@ class ChannelData {
 
   /// Creates a new instance from a json map.
   factory ChannelData.fromJson(Map json) => ChannelData(
-        userId: json["user_id"] ?? '',
+        userId: json["user_id"]?.toString() ?? '',
         userInfo: json["user_info"],
       );
 
