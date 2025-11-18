@@ -16,7 +16,7 @@ class PrivateChannel extends Channel {
     onSubscriptionCount(_onSubscriptionCount);
   }
 
-  int? userId;
+  String? userId;
 
   /// The user member of the channel.
   Member? get member => userId != null ? Member(id: userId!) : null;
