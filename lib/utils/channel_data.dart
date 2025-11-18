@@ -2,7 +2,7 @@ import 'dart:convert';
 
 class ChannelData {
   /// The user id of the channel data.
-  final String userId;
+  final int userId;
 
   /// The user info of the channel data.
   final dynamic userInfo;
